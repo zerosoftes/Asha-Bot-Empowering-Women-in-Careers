@@ -46,6 +46,8 @@ graph TD;
     Chatbot --> GradioUI[Gradio / React UI]
     GradioUI --> VoiceSupport[Voice-to-Text (STT)]
 
+
+
 ⚙️ Tech Stack
 Frontend: Gradio, React, Voice STT
 
