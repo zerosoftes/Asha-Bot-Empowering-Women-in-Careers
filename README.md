@@ -33,19 +33,17 @@
 | **Zero-login UX** | Secure, session-based, private experience |
 
 ---
-
 ## 🧱 Architecture Overview
 
 ```mermaid
 graph TD;
     User --> Chatbot
     Chatbot --> Rasa[Intent Recognition]
-    Chatbot --> BiasModule[Bias Detection & Reframing]
+    Chatbot --> BiasModule[Bias Detection and Reframing]
     Chatbot --> SemanticEngine[Semantic Search]
     SemanticEngine --> CSV[Jobs, Mentors, Events Datasets]
-    Chatbot --> GradioUI[Gradio / React UI]
-    GradioUI --> VoiceSupport[Voice-to-Text (STT)]
-
+    Chatbot --> GradioUI[Gradio or React UI]
+    GradioUI --> VoiceSupport[Voice-to-Text STT]
 
 
 ⚙️ Tech Stack
@@ -105,10 +103,11 @@ docker run -p 7860:7860 asha-bot
 
 🎓 Coursera/Udemy integrations for skilling
 
+
 🤝 Contributing
 We welcome contributors working on ethical AI, inclusive NLP, women in tech, and career accessibility.
-
 Start by checking out our Issues or submitting your ideas via pull request.
+
 
 📄 License & Contact
 Licensed under MIT.
@@ -118,14 +117,4 @@ Built with ❤️ by Sudarshanam Yessasvini
 
 “Let’s reimagine workforce re-entry. One empowering conversation at a time.”
 
-
----
-
-### ✅ Want me to:
-- Auto-generate the `requirements.txt`?
-- Create a `Dockerfile` for deployment?
-- Design a banner/header image for GitHub?
-- Push this into a repo with `assets/` folder?
-
-I can help you do all of that next!
 
