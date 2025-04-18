@@ -98,6 +98,10 @@ asha-bot/
 ✅ Transparent NLP intent handling
 ✅ Reframes limiting beliefs using GenAI responsibly
 
+🎥 Live Demo (Optional)
+  🎥 [Watch the Demo](https://github.com/yourusername/asha-bot/assets/your-asset-id/demo.mp4)
+
+
 👩‍💻 Contributing
 We welcome all contributors passionate about equity and inclusion in tech!
 Please feel free to open an issue, submit a pull request, or share ideas 💡
