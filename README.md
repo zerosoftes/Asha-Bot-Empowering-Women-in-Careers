@@ -1,120 +1,116 @@
 # Asha-Bot-Empowering-Women-in-Careers
-# 💬 Asha ReIgnite Bot – Empowering Women Returning to Work with Ethical AI
 
-![Asha Banner](https://via.placeholder.com/1000x250?text=Asha+ReIgnite+Bot+%7C+AI+for+Women+Returning+to+Work)
+# 🤖 Asha Bot – Her Career Compass
 
-**Asha ReIgnite Bot** is an award-ready, AI-powered career assistant built for the **JobsForHer Foundation** to support women re-entering the workforce. Asha provides **bias-aware conversational support**, **personalized job and mentor recommendations**, and **real-time empowerment insights**—with zero login, zero data retention, and full empathy.
+Asha Bot is a context-aware AI chatbot designed to empower women re-entering the workforce. With voice-enabled interaction, personalized guidance, real-time job and mentor lookup, bias detection, and skill-building tips, Asha provides a privacy-first and inclusive experience.
 
-> ✨ "*Asha doesn't just answer questions. She reignites careers with courage, context, and care.*"
-
----
-
-## 🚀 Why Asha?  
-
-👩‍💻 **60% of women leave careers due to lack of mentorship, confidence, or clarity.** Asha fixes this with:
-
-- 🔍 Contextual job, event & mentor discovery  
-- 🧠 Bias reframing using ethical AI  
-- 🏆 Gamified milestones to boost career momentum  
-- 🎙️ Multilingual voice support for inclusive access  
-- 🧩 No-login personalization with session intelligence  
+🔗 **Live Demo:** [https://her-career-compass.lovable.app](https://her-career-compass.lovable.app)
 
 ---
 
-## 🔑 Key Features
+## 🚀 Features
 
-| 🧠 Feature | 💡 Description |
-|-----------|----------------|
-| **Career Gap Navigator** | Context-aware exploration of interests & returnship roles |
-| **Mentorship Matchmaker** | Semantic search-based matching from curated datasets |
-| **Bias Defender** | Reframes biased queries using Perspective API + NLP |
-| **Skill Builder** | Suggests personalized learning tracks (e.g. Data Science, UX) |
-| **Live Empowerment Pulse** | Real-time global stats via D3.js/Plotly visualizations |
-| **Zero-login UX** | Secure, session-based, private experience |
+- 🎙️ **Voice Input**  
+  Hands-free conversation for accessible interaction
+
+- 🧭 **Personalized Career Navigation**  
+  Curated job and mentorship recommendations based on user goals
+
+- 🧠 **Bias Detection & Reframing**  
+  Detects discouraging language and reframes it using Perspective API and custom prompts
+
+- 📊 **Empowerment Pulse**  
+  Visual dashboard showing progress, goals, and confidence trends
+
+- 🧩 **Modular Architecture**  
+  Easily extensible with CSVs, Airtable, or custom APIs
+
+- 🌐 **Zero-login Experience**  
+  Fully client-side with no data stored; privacy by design
+
+- 🔧 **Admin Panel** *(Admin only)*  
+  Real-time content management via Airtable backend
 
 ---
-## 🧱 Architecture Overview
 
-```mermaid
-graph TD;
-    User --> Chatbot
-    Chatbot --> Rasa[Intent Recognition]
-    Chatbot --> BiasModule[Bias Detection and Reframing]
-    Chatbot --> SemanticEngine[Semantic Search]
-    SemanticEngine --> CSV[Jobs, Mentors, Events Datasets]
-    Chatbot --> GradioUI[Gradio or React UI]
-    GradioUI --> VoiceSupport[Voice-to-Text STT]
+## 🧱 Architecture
 
+![Architecture Diagram](architecture.png)
 
-⚙️ Tech Stack
-Frontend: Gradio, React, Voice STT
+- **Rasa + Transformers** – NLP for intent classification & dialogue
+- **Perspective API** – Reframes limiting or biased input in real-time
+- **Semantic Search** – Matches user profiles with jobs & mentors from CSV
+- **Gradio or React Frontend** – Voice-enabled UI embedding the chatbot
+- **Dockerized Setup** – Run locally or deploy to cloud effortlessly
+- **Serverless Hosting** – Powered by Railway or A0.dev
 
-Backend: Python, Rasa, Flask
+---
 
-AI/NLP: Hugging Face Transformers, spaCy, SentenceTransformers
+## 🖼️ UI Previews
 
-Data: Pandas, Airtable (admin panel), Perspective API
+![Wireframes](wireframes.png)
 
-Visualization: Plotly, D3.js
+---
 
-Deployment: Docker, AWS Lambda-ready, Colab (prototype)
+## 📦 Installation
 
-📸 UI Snapshots
+```bash
+# 1. Clone the repo
+git clone https://github.com/yourusername/asha-bot.git
+cd asha-bot
 
-Landing Page	Chat Interface	Empowerment Dashboard
-📁 See full UI kit in /assets folder or [design repo link].
+# 2. Set up virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-
-📊 Performance Metrics
-
-Metric	Value
-🕐 Avg. Response Time	~1.5 seconds
-📊 Bias Detection Accuracy	90%+
-🎯 Job Match Relevance	95%+
-🙋 User Feedback Score	★ 4.8 / 5.0
-
-💻 How to Run
-🔧 Local Setup (Gradio)
-
-git clone https://github.com/YOUR_USERNAME/asha-reignite-bot.git
-cd asha-reignite-bot
+# 3. Install dependencies
 pip install -r requirements.txt
-python asha_bot_empowering_women_in_careers.py
 
-The app will run on localhost or shareable Gradio link.
+# 4. Train and start the Rasa server
+rasa train
+rasa run --enable-api
 
-🐳 Docker Support (Optional)
-docker build -t asha-bot .
-docker run -p 7860:7860 asha-bot
+# 5. Launch frontend
+# Option A: Gradio
+python app.py
 
-📽️ Live Demo
-🎥 Watch Demo Video
-🧑‍🏫 View Pitch Deck
-
-
-🛤️ Future Roadmap
-🔗 LinkedIn API for real-time mentorship sync
-
-📖 Resume gap NLP analysis
-
-🧠 AI-led returnship coaching agents
-
-🌐 Hindi + Regional language support
-
-🎓 Coursera/Udemy integrations for skilling
+# Option B: React (from frontend directory)
+cd frontend
+npm install
+npm start
 
 
-🤝 Contributing
-We welcome contributors working on ethical AI, inclusive NLP, women in tech, and career accessibility.
-Start by checking out our Issues or submitting your ideas via pull request.
+📁 Project Structure
+
+asha-bot/
+│
+├── data/                   # Rasa domain, stories, and rules
+├── actions/                # Custom Python actions (e.g., bias reframing)
+├── nlu/                    # Training data for intents
+├── frontend/               # Gradio or React UI
+├── docker-compose.yml      # Optional Docker setup
+├── requirements.txt
+└── README.md
+
+🛡️ Ethical AI & Privacy
+✅ No personally identifiable information collected
+✅ No login, cookies, or trackers
+✅ Transparent NLP intent handling
+✅ Reframes limiting beliefs using GenAI responsibly
+
+👩‍💻 Contributing
+We welcome all contributors passionate about equity and inclusion in tech!
+Please feel free to open an issue, submit a pull request, or share ideas 💡
 
 
-📄 License & Contact
-Licensed under MIT.
+---
+📄 License
+MIT License © 2025 Sudarshanam Yessasvini
 
-Built with ❤️ by Sudarshanam Yessasvini
-📫 yessasvini.s@gmail.com • Portfolio
+Let me know if you'd like:
+- A `requirements.txt` or `docker-compose.yml` generated
+- A ZIP archive of this project structure
+- Shields.io badges (like `Built with Rasa`, `MIT Licensed`, `Python 3.x`)
+- GitHub Actions for testing or deployment
 
-“Let’s reimagine workforce re-entry. One empowering conversation at a time.”
-
-
+Ready to push this to a repo? I can help with the commit message, repo description, and first release setup too!
