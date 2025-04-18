@@ -35,7 +35,7 @@ Asha Bot is a context-aware AI chatbot designed to empower women re-entering the
 
 ## 🧱 Architecture
 
-![Architecture Diagram](architecture.png)
+!([ARCHITECTURE DIAGRAM](./Archirtecture.jpg))
 
 - **Rasa + Transformers** – NLP for intent classification & dialogue
 - **Perspective API** – Reframes limiting or biased input in real-time
@@ -48,7 +48,7 @@ Asha Bot is a context-aware AI chatbot designed to empower women re-entering the
 
 ## 🖼️ UI Previews
 
-![Wireframes](wireframes.png)
+![Wireframes](# [Wireframes / Mock Diagrams of the Proposed Solution](Wireframes.jpg))
 
 ---
 
@@ -99,7 +99,7 @@ asha-bot/
 ✅ Reframes limiting beliefs using GenAI responsibly
 
 🎥 Live Demo (Optional)
-[![Watch the Demo]  https://youtu.be/IznF9y11s84
+🎥 [Watch the Demo on YouTube](https://youtu.be/IznF9y11s84)
 
 
 👩‍💻 Contributing
