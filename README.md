@@ -99,7 +99,9 @@ asha-bot/
 ✅ Reframes limiting beliefs using GenAI responsibly
 
 🎥 Live Demo (Optional)
-  🎥 [Watch the Demo](https://github.com/yourusername/asha-bot/assets/your-asset-id/demo.mp4)
+    ### 🎥 Live Demo
+
+[![Watch the Demo](https://youtu.be/IznF9y11s84)
 
 
 👩‍💻 Contributing
