@@ -1,120 +1,113 @@
-# Asha-Bot-Empowering-Women-in-Careers
+# 🤖 Asha Bot – Empowering Women Returning to Work
 
-# 🤖 Asha Bot – Her Career Compass
-
-Asha Bot is a context-aware AI chatbot designed to empower women re-entering the workforce. With voice-enabled interaction, personalized guidance, real-time job and mentor lookup, bias detection, and skill-building tips, Asha provides a privacy-first and inclusive experience.
-
-🔗 **Live Demo:** [https://her-career-compass.lovable.app](https://her-career-compass.lovable.app)
+**🚀 Submitted for: Asha Hackathon 2024**  
+**👩‍💻 Created by: Sudarshanam Yessasvini**  
+📺 [Watch Demo](https://youtu.be/IznF9y11s84) | 🌐 [Live App](https://her-career-compass.lovable.app)
 
 ---
 
-## 🚀 Features
+## 💡 Vision
 
-- 🎙️ **Voice Input**  
-  Hands-free conversation for accessible interaction
+More than 60% of women face barriers when returning to work after a career break. **Asha Bot** is a voice-first, privacy-first AI career assistant that helps women rediscover their path with **personalized support, ethical AI, and real-time empowerment tools**.
 
-- 🧭 **Personalized Career Navigation**  
-  Curated job and mentorship recommendations based on user goals
-
-- 🧠 **Bias Detection & Reframing**  
-  Detects discouraging language and reframes it using Perspective API and custom prompts
-
-- 📊 **Empowerment Pulse**  
-  Visual dashboard showing progress, goals, and confidence trends
-
-- 🧩 **Modular Architecture**  
-  Easily extensible with CSVs, Airtable, or custom APIs
-
-- 🌐 **Zero-login Experience**  
-  Fully client-side with no data stored; privacy by design
-
-- 🔧 **Admin Panel** *(Admin only)*  
-  Real-time content management via Airtable backend
+> “Asha is more than a chatbot—it's a digital ally in every woman’s career comeback.”
 
 ---
 
-## 🧱 Architecture
+## 🎯 Key Features
 
-!([ARCHITECTURE DIAGRAM](./Archirtecture.jpg))
-
-- **Rasa + Transformers** – NLP for intent classification & dialogue
-- **Perspective API** – Reframes limiting or biased input in real-time
-- **Semantic Search** – Matches user profiles with jobs & mentors from CSV
-- **Gradio or React Frontend** – Voice-enabled UI embedding the chatbot
-- **Dockerized Setup** – Run locally or deploy to cloud effortlessly
-- **Serverless Hosting** – Powered by Railway or A0.dev
+- 🎙️ **Voice-Enabled Guidance** – Speak, don’t type
+- 🧠 **Bias Detection & Reframing** – Powered by Perspective API
+- 🔍 **Smart Job & Mentor Matching**
+- 📊 **Empowerment Pulse** – Live trends & career insights
+- 🔐 **Zero-login & No Tracking** – Truly private interaction
 
 ---
 
-## 🖼️ UI Previews
+## 🧠 Tech Stack
 
-![Wireframes](# [Wireframes / Mock Diagrams of the Proposed Solution](Wireframes.jpg))
+| Layer         | Technology Used                            |
+|---------------|---------------------------------------------|
+| **Frontend**  | Gradio, React                               |
+| **Backend**   | Python, Flask, Rasa                         |
+| **NLP**       | Hugging Face Transformers, spaCy, NLTK      |
+| **APIs**      | Perspective API, Google Jobs API            |
+| **Deployment**| Docker, Heroku, GCP (alt.)                  |
 
 ---
 
-## 📦 Installation
+## 📁 Project Structure (Clean)
+
+
+asha-reignite-bot/ │ ├── 📁 app/ │ ├── chatbot_core.py │ ├── asha_interface.py │ └── requirements.txt │ ├── 📁 deployment/ │ ├── Dockerfile │ ├── Procfile │ └── start.sh │ ├── 📁 assets/ │ ├── user.png │ ├── asha.png │ ├── asha_bot_empowering_women_in_careers.py ├── LICENSE └── README.md
+
+
+---
+
+## 🔧 Quick Setup (Local)
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/yourusername/asha-bot.git
-cd asha-bot
+git clone https://github.com/yessasvini23/asha-reignite-bot.git
+cd asha-reignite-bot
 
-# 2. Set up virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# Install dependencies
+pip install -r app/requirements.txt
 
-# 3. Install dependencies
-pip install -r requirements.txt
+# Run the bot interface
+python asha_bot_empowering_women_in_careers.py
 
-# 4. Train and start the Rasa server
-rasa train
-rasa run --enable-api
-
-# 5. Launch frontend
-# Option A: Gradio
-python app.py
-
-# Option B: React (from frontend directory)
-cd frontend
-npm install
-npm start
+OR launch directly in Google Colab 👉 Try Notebook
 
 
-📁 Project Structure
+🛡️ Ethics by Design
+✅ Zero-login architecture
 
-asha-bot/
-│
-├── data/                   # Rasa domain, stories, and rules
-├── actions/                # Custom Python actions (e.g., bias reframing)
-├── nlu/                    # Training data for intents
-├── frontend/               # Gradio or React UI
-├── docker-compose.yml      # Optional Docker setup
-├── requirements.txt
-└── README.md
+✅ No data collection or tracking
 
-🛡️ Ethical AI & Privacy
-✅ No personally identifiable information collected
-✅ No login, cookies, or trackers
-✅ Transparent NLP intent handling
-✅ Reframes limiting beliefs using GenAI responsibly
+✅ Real-time bias detection and reframing
 
-🎥 Live Demo 
-[Link Text] (https://youtu.be/IznF9y11s84)
+✅ Built with inclusive, voice-first design
+
+🌍 Impact Dashboard (Live Stats)
+📊 Empowerment Pulse
+🔄 Daily Metrics on:
+
+Women upskilled
+
+Mentorship sessions
+
+Jobs applied
+
+Stories shared
+
+(Accessible in app sidebar → Statistics Tab)
+
+🔭 Roadmap
+🌐 Multilingual voice support for rural access
+
+🤝 LinkedIn integration for mentorship sync
+
+🧠 NLP-powered resume gap analysis
+
+🏅 Gamified milestone tracker for returnees
 
 
-👩‍💻 Contributing
-We welcome all contributors passionate about equity and inclusion in tech!
-Please feel free to open an issue, submit a pull request, or share ideas 💡
+🙋‍♀️ About the Creator
+Sudarshanam Yessasvini
+AI Architect & Developer, Passionate about Ethical Tech
+📧 yessasvini.s@gmail.com | LinkedIn
+🌐 Portfolio
+
+
+📝 License
+This project is licensed under the MIT License – empowering innovation with openness.
 
 
 ---
-📄 License
-MIT License © 2025 Sudarshanam Yessasvini
 
-Let me know if you'd like:
-- A `requirements.txt` or `docker-compose.yml` generated
-- A ZIP archive of this project structure
-- Shields.io badges (like `Built with Rasa`, `MIT Licensed`, `Python 3.x`)
-- GitHub Actions for testing or deployment
+Would you like me to:
+- Save this directly into your `/mnt/data/asha-reignite-bot/README.md`?
+- Generate a ZIP of the folder?
+- Or auto-deploy to your GitHub?
 
-Ready to push this to a repo? I can help with the commit message, repo description, and first release setup too!
+Let me know what you'd like next!
